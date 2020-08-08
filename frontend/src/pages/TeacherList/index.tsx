@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList(){
     return(
@@ -18,19 +19,17 @@ function TeacherList(){
                 </div>
 
                 <div className="input-block">
-                    <label htmlFor="time">Horaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</label>
+                    <label htmlFor="time">Hora</label>
                     <input type="text" id="time" />
                 </div>
             </form>
            </PageHeader>
 
            <main>
-               <article className="teacher-item">
-                   <header>
-                       <img src="https://avatars0.githubusercontent.com/u/19291466?s=460&v=4" alt="Lorena" />
-                       <div></div>
-                   </header>
-               </article>
+            <TeacherItem />
+            <TeacherItem />
+            <TeacherItem />
+            <TeacherItem />
            </main>
         </div>
     )
